@@ -33,6 +33,9 @@ def create_checkout_session():
 def success():
   return render_template("success.html")
 
+@app.route("/cancel")
+def cancel():
+  return render_template("cancel.html")
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug = True)
